@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps</title>
+    <link rel="stylesheet" href="../css/stylecopy.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img style="height: 48px;padding: 10px;"
+                    src="../assets/ftn-high-resolution-logo-white-on-transparent-background.png" alt="">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <!-- <li><a href="signup.html">SignUp</a></li> -->
+                    <li><a href="/s">Soumya</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <input type="text" id="lat">
+    <button id="dd" onclick="show()">Find</button>
+    <div style="width: 100%"><iframe id="map"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDAcITbJ2iiNkSXw0XYXIUC0RR5pOuvys0&q=dhanori pune/"
+        >asdfghj</a></iframe></div>
+</body>
+<script>
+function show()
+{
+    let lat = document.getElementById("lat").value;
+    // let lng = document.getElementById("lng").value;
+    let link = "https://www.google.com/maps/embed/v1/place?key=AIzaSyDAcITbJ2iiNkSXw0XYXIUC0RR5pOuvys0&q="+lat
+    document.getElementById("map").src=link;
+
+}
+</script>
+</html>

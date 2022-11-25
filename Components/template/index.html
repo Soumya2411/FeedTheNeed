@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feed The Need</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .but1
+        {
+            width:15vw;
+            height: 7vh;
+            border-radius: 5px;
+            font-size: 24px;
+            background-color: rgb(213, 139, 139);
+            color: white;
+            border:0px;
+        }
+        .but1:active
+        {
+            background-color:rgb(166, 71, 71) ;
+        }
+        .but2
+        {
+            width:15vw;
+            height: 7vh;
+            border-radius: 5px;
+            font-size: 24px;
+            background-color: #5ab26a;
+            color: white;
+            border:0px;
+        }
+        .but2:active
+        {
+            background-color:#3b954b ;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img style="height: 48px;padding: 10px;"
+                    src="../assets/ftn-high-resolution-logo-white-on-transparent-background.png" alt="">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <!-- <li><a href="signup.html">SignUp</a></li> -->
+                    <li><a href="/s">Soumya</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home" id="ch">
+        <img src="../assets/bgimg(1).jpg" alt="" class="chan">
+        <img src="../assets/bgimg(2).jpg" alt="" class="chan">
+        <img src="../assets/bgimg(3).jpg" alt="" class="chan">
+    </section>
+    <button class="but2" id="havesome" style="z-index: 10000;position: absolute;left: 35%;top: 50%;" onclick="location.href='checkl.html'">Have Some Food</button>
+    <button class="but1" id="havesome" style=" z-index: 10000;position: absolute;left: 55%;top: 50%;" onclick="location.href='givesome.html'">Give Some Food</button>
+    <div style="height: 150px;"></div>
+    <div>
+        <h2 class="myH2">What is this ?</h2>
+        <p class="myP"> According to several types of research, approximately 40 percent of the food
+            prepared at functions is wasted. India’s estimated 10 million events a year contribute to food wastage. We
+            all are aware that in India, starvation is one of the major causes of death.
+            <br></p>
+            <h2 class="myH2">Solution</h2>
+            <p class="myP">
+            We chose one the most preferred method of food recovery.
+        FTN is an interface that will connect the food donator and the person willing to volunteer.
+        We are proposing a solution to avoid the wastage of  food in abundance and feed the people in need.
+        </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../scripts/imageChange.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            }
+            else {
+                $('.nav').removeClass('affix');
+            }
+        });
+       
+    </script>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feed The Need</title>
+    <link rel="stylesheet" href="../css/stylecopy.css">
+    <style>
+        .but2
+        {
+            width:15vw;
+            height: 7vh;
+            border-radius: 5px;
+            font-size: 24px;
+            background-color: #5ab26a;
+            color: white;
+            border:0px;
+        }
+        #edit{
+            border-radius: 24px;
+        }
+    </style>
+     <link rel="stylesheet" 
+     href=
+     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity=
+     "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+     crossorigin="anonymous"> 
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="conainer">
+            <div class="logo">
+                <img style="height: 48px;padding: 10px;"
+                    src="../assets/ftn-high-resolution-logo-white-on-transparent-background.png" alt="">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/s">SignUp</a></li>
+                    <li><a href="/s">Login</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div style="padding:20px;" >
+        <div class="row">
+        <div class="col-md-3">
+                      
+        </div>
+                  
+        <div class="col-md-6 main">
+                      <div id="edit">
+            <form action="http://localhost:3005/shop_info" method="post">
+                      
+            <h1> Signup form </h1>
+                              
+            <input class="box" type="text" name="Shopname" id="Shopname" 
+            placeholder=" Shop Name"  required /><br>
+                              
+            <h2>Shop Address</h2>
+
+            <input class="box" type="" name="locality" id="locality" 
+            placeholder="locality"   required /><br>
+                              
+            <input class="box" type="area" name="area" 
+            id="area" placeholder="Area" required/><br>
+                              
+            <input class="box" type="text" name="street" id="street"  
+            placeholder="street" required/><br>
+                        <br>
+
+         <input class="box" type="text" name="city" id="city"  
+         placeholder="city" required/><br>
+                                    <br>     
+                                    
+      <input class="box" type="text" name="pincode" id="pincode"  
+       placeholder="pincode" required/><br>
+      <br>
+
+      <input class="box" type="text" name="state" id="state"  
+      placeholder="state" required/><br>
+                  <br>
+
+
+<input class="box" type="text" name="Landmark" id="Landmark"  
+ placeholder="Landmark" required/><br>
+                              <br>
+
+
+                              
+            <input type="submit" id="submitDetails"  
+            name="submitDetails" value="Submit" /><br>
+                      
+            </form>
+                      
+        </div>
+    </div>      
+                  
+        <div class="col-md-3">
+        </div>
+                  
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../scripts/imageChange.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            }
+            else {
+                $('.nav').removeClass('affix');
+            }
+        });
+       
+    </script>
+    <script src="../scripts/script.js"></script>
+
+</body>
+
+</html>
